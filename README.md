@@ -1,2 +1,2 @@
 # ipinfo
-Fork for davidepastore/ipinfo
+Fork of davidepastore/ipinfo
