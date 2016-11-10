@@ -1,0 +1,32 @@
+{
+    "name": "ginsen/ipinfo",
+    "license": "MIT",
+    "type": "library",
+    "description": "A wrapper around the ipinfo.io services inspired by davidepastore/ipinfo",
+    "keywords": [ "ipinfo", "ip", "geolocation" ],
+    "authors": [{
+        "name": "J. Ginés Hernández Galindo",
+        "email": "jgines@gmail.com",
+        "homepage": "https://github.com/ginsen",
+        "role": "Developer"
+    }],
+    "autoload": {
+        "psr-4": {
+            "IpInfo\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3",
+        "ext-curl": "*",
+        "symfony/http-foundation": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.1.4",
+        "johnkary/phpunit-speedtrap": "^1.0",
+        "mybuilder/phpunit-accelerator": "^1.1",
+        "mockery/mockery": "^0.9.5"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
