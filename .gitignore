@@ -1,5 +1,19 @@
 /vendor/
+/bin/*
+!/bin/.gitkeep
 composer.lock
 
-# IDE PhpStorm
-/.idea/
+
+# IDE (SublimeText, Eclipse, Zend Studio, Netbeans, PHPStorm, TextMate2)
+Capfile
+.buildpath
+.idea
+nbproject
+.project
+.settings
+.sublime-project
+.tm_properties
+TextMate2
+
+# Backup files
+*~*
