@@ -1,4 +1,5 @@
 /vendor/
+/hooks/
 /bin/*
 !/bin/.gitkeep
 composer.lock
