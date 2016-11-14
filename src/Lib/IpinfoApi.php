@@ -104,6 +104,6 @@ class IpinfoApi
 
         curl_close($curl);
 
-        return new JsonResponse($response, $headers['http_code'], $headers, true);
+        return new JsonResponse(json_decode($response, true), $headers['http_code'], $headers);
     }
 }
