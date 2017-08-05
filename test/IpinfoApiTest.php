@@ -19,7 +19,7 @@ class IpinfoApiTest extends \PHPUnit_Framework_TestCase
         static::assertEquals('Mountain View', $response->getCity());
         static::assertEquals('California', $response->getRegion());
         static::assertEquals('US', $response->getCountry());
-        static::assertEquals('37.3860,-122.0838', $response->getLoc());
+        static::assertEquals('37.3860,-122.0840', $response->getLoc());
         static::assertEquals(94035, $response->getPostal());
 
         static::assertEquals('google-public-dns-a.google.com', $response->getHostname());
@@ -38,7 +38,7 @@ class IpinfoApiTest extends \PHPUnit_Framework_TestCase
         static::assertEquals('Mountain View', $response->getCity());
         static::assertEquals('California', $response->getRegion());
         static::assertEquals('US', $response->getCountry());
-        static::assertEquals('37.3860,-122.0838', $response->getLoc());
+        static::assertEquals('37.3860,-122.0840', $response->getLoc());
         static::assertEquals(94035, $response->getPostal());
 
         static::assertEmpty($response->getHostname());
