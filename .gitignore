@@ -3,7 +3,7 @@
 /hooks/
 
 composer.lock
-
+coverage.clover
 
 # IDE (SublimeText, Eclipse, Zend Studio, Netbeans, PHPStorm, TextMate2)
 Capfile

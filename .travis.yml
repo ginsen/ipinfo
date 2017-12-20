@@ -1,14 +1,25 @@
 language: php
 
+sudo: false
+
 php:
-    - 5.3
     - 5.4
     - 5.5
     - 5.6
     - 7.0
+    - hhvm
+
+cache:
+    directories:
+        - $HOME/.composer/cache
 
 before_script:
     - git config --global user.email test@test.com
     - git config --global user.name "Test User"
     - composer self-update
+
+install:
     - composer install -o --dev --no-interaction --prefer-source
+
+script:
+  - phpunit --coverage-text --coverage-clover=coverage.clover
